@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
 import store from "./reduxStore/store.js";
-import JobListingsCard from "./components/JobListingsCard.js";
+import JobListingsCard from "./components/JobListingsCard.jsx";
 
 function App() {
   return (

@@ -1,0 +1,193 @@
+.centered-view {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 3%;
+}
+
+.not-found {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 30%;
+    height: 100vh;
+    width: 100vh;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+}
+
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: center;
+    gap: 30px;
+}
+
+.job-description-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 24px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .job-description-card {
+        width: calc(100% - 20px);
+    }
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posted-details {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px;
+    margin: 8px 8px 8px 0px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.company-details {
+    display: flex;
+    margin: 2px;
+}
+
+.company-logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: contain;
+
+}
+
+.location,
+.salary,
+.about-company {
+    margin-top: 20px;
+    position: relative;
+}
+
+.blurred-content {
+    position: relative;
+}
+
+.blurred-content p {
+    margin-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.blur-background {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(1px);
+}
+
+
+a {
+    font-weight: 500;
+    position: absolute;
+    color: #726ee3;
+    top: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px;
+}
+
+.company-name {
+    margin-top: 4px;
+    color: #8b8b8b;
+    font-weight: bold;
+}
+
+.expected-salary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 2px;
+}
+
+.minimum-experience {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    padding: 4px;
+    color: #8f8f8f;
+}
+
+.easy-apply-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #54efc3;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.easy-apply-button .icon {
+    margin-right: 5px;
+}
+
+.unlock-referral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4943da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.unlock-referral .icon {
+    margin-right: 5px;
+}
