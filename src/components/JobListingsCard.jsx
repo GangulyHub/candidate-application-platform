@@ -114,8 +114,9 @@ const JobListingsCard = ({
           actionSetter={updateCompanyName}
         />
       </div>
+      {filteredJobs.length > 0 ? (
       <div className="job-container">
-        {filteredJobs.length > 0 ? (
+        {
           filteredJobs.map((job, index) => (
             <div className="job-description-card" key={index}>
               <div className="top-section">
@@ -165,12 +166,12 @@ const JobListingsCard = ({
               </button>
             </div>
           ))
-        ) : (
+        }
+      </div>) : (
           <div className="not-found">
             Oops.. No any job matched with filtered data{" "}
           </div>
         )}
-      </div>
     </div>
   );
 };
